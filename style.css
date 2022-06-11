@@ -1,0 +1,160 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+    
+  }
+
+  *,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body{
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 50% 50% 50% 50%;
+  background-color: var(--Pale-blue);
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+main{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+ .container .hero-image{
+  max-width: 35rem;
+  min-height: 20rem;
+  border-radius: 20px 20px 0px 0px;
+} 
+
+
+.container{
+  display: flex;
+  max-width:35rem ;
+  border: 1px solid white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4rem;
+  border-radius: 20px;
+  background-color: white;
+
+}
+
+h1{
+  
+  font-weight: 900;
+  padding-top: 4rem;
+}
+ .card-p{
+  color: var(--Desaturated-blue);
+  font-size: 1.3rem;
+  padding: 2rem 6rem;
+  font-weight: 500;
+  text-justify:inter-word;
+  
+ }
+ .information{
+  min-width: 30rem;
+  min-height: 7rem;
+  background-color: var(--Very-pale-blue);
+  display: flex;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+ 
+
+ }
+
+
+ .information img {
+ 
+  padding: 1rem 2rem;
+ }
+
+ .plan > :nth-child(1){
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1rem 0rem;
+ }
+
+ .plan > :nth-child(2){
+  color: var(--Desaturated-blue);
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: 500;
+
+ }
+
+  .change{
+  text-decoration: underline;
+  color: var(--Bright-blue);
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 2.5rem 2rem 0 8rem;
+ 
+ }
+ .change:hover{
+  cursor: pointer;
+  color: rgb(151, 25, 224);
+  text-decoration: none;
+  font-size: 1.2rem;
+ }
+ .proceed{
+  min-width:30rem;
+  background-color: var(--Bright-blue);
+  padding: 1rem 4rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+
+ }
+ .proceed:hover{
+  background-color:rgb(151, 25, 224) ;
+  cursor: pointer;
+ }
+
+
+ .cancel{
+  min-width:30rem;
+  background: transparent;
+  padding: 2rem 4rem;
+  margin-bottom: 2rem;
+  color: var(--Desaturated-blue);
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+
+
+
+ }
+ .cancel:hover{
+  color: black;
+  cursor: pointer;
+ }
+
+
+ @media screen and (max-width: 375px) {
+  html{
+    font-size: 42.5%;
+  }
+}
