@@ -100,14 +100,78 @@ a{
   margin-top: 0.5rem;
   opacity: 70%;
 }
+a:hover{
+ text-decoration: none;
+ cursor: pointer;
+}
 
 .proceed {
+  display: block;
   color: var(--Pale-blue);
   background-color: var(--Bright-blue);
-  width: 100%;
+  margin: 0 auto;
   font-size: 1rem;
   font-weight: 700;
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  border: 1px solid var(--Bright-blue);
+  box-shadow: 5px 10px 40px hsl(223, 47%, 23%);
+}
+.proceed:hover{
+  background-color: rgb(128, 71, 241);
+  border: none;
+  cursor: pointer;
+}
+
+.cancel{
+  margin:1.5rem auto;
+  display: block;
+  color: var(--Desaturated-blue);font-size: 1rem;
+  font-weight: 700;
+  opacity: 70%;
+  padding: 1rem 4rem;
+  background: transparent;
+  border: none;
+  
+
+}
+
+
+@media only screen and (width: 376px) 
+{
+
+  body{
+    background-image: url(images/pattern-background-mobile.svg);
+   
+    background-repeat: no-repeat;
+    
+    max-width: 375px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size:16px;
+    background-color: var(--Pale-blue);
+    min-height: 100vh;
+    padding:5rem 1rem;
+  }
+
+}
+
+@media(min-width:400px)
+{
+
+  body{
+    background-image: url(images/pattern-background-desktop.svg);
+   
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    
+    font-family: 'Red Hat Display', sans-serif;
+    font-size:16px;
+    background-color: var(--Pale-blue);
+    min-height: 100vh;
+   
+  }
  
+
 }
 
 
